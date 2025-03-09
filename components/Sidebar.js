@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <aside className="fixed inset-y-0 left-0 w-64 bg-white border-r border-gray-200 px-6 py-8">
+    <aside className="fixed inset-y-0 left-0 w-56 bg-white border-r border-gray-200 px-6 py-8">
       {/* Logo */}
       <div className="mb-8">
         <Link href="/">
@@ -26,22 +26,12 @@ export default function Sidebar() {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-gray-900 mb-3">Wrapper Setup</h2>
-          <div className="space-y-2 pl-4">
-            <Link href="/provider-setup" className="block text-gray-700 hover:text-black">
-              Provider Setup
-            </Link>
-          </div>
-        </div>
-
-
-        <div>
           <h2 className="text-lg font-semibold text-gray-900 mb-3">Connect Button</h2>
           <div className="space-y-2 pl-4">
-            <Link href="/setup" className="block text-gray-700 hover:text-black">
+            <Link href="/docs/setup" className="block text-gray-700 hover:text-black">
               Setup
             </Link>
-            <Link href="/customization" className="block text-gray-700 hover:text-black">
+            <Link href="/docs/customization" className="block text-gray-700 hover:text-black">
               Customization
             </Link>
           </div>
