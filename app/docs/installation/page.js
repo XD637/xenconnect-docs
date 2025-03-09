@@ -13,17 +13,22 @@ export default function Installation() {
   const [packageManager, setPackageManager] = useState("npm");
 
   return (
-    <div className="flex flex-col flex-grow ml-56 pt-20 px-12">
-      <div className="max-w-2xl">
-        <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-6">Installation</h1>
+    <div className="flex flex-col flex-grow pt-20 px-6 sm:px-12 sm:pl-56">
+      <div className="max-w-2xl mx-auto sm:mx-0">
+        {/* Title */}
+        <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-6 text-center sm:text-left">
+          Installation
+        </h1>
 
-        <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+        {/* Description */}
+        <p className="text-lg text-gray-600 mb-6 leading-relaxed text-center sm:text-left">
           Install <span className="text-gray-800 font-medium">XenConnect</span> and its dependencies
-          using your preferred package manager.
+          using your preferred package manager. XenConnect is designed to be{" "}
+          <span className="text-gray-800 font-medium">lightweight, easy to integrate, and developer-friendly</span>.
         </p>
 
         {/* Package Manager Switcher */}
-        <div className="flex space-x-2 mb-4">
+        <div className="flex flex-wrap sm:flex-nowrap gap-2 justify-center sm:justify-start mb-4">
           {Object.keys(commands).map((pm) => (
             <button
               key={pm}
@@ -41,6 +46,23 @@ export default function Installation() {
 
         {/* Code Snippet */}
         <CodeSnippet code={commands[packageManager]} />
+
+        {/* Next Steps */}
+        <div className="mt-8 bg-white border border-gray-950/10 shadow-md rounded-xl p-6">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4 text-center sm:text-left">
+            Next Steps
+          </h2>
+          <p className="text-gray-700 leading-relaxed text-center sm:text-left">
+            Once installed, follow the{" "}
+            <a
+              href="/docs/setup"
+              className="text-blue-600 hover:underline font-medium"
+            >
+              Setup Guide
+            </a>{" "}
+            to configure <strong>XenConnectProvider</strong> and start integrating the <strong>Connect Wallet</strong> button.
+          </p>
+        </div>
       </div>
     </div>
   );

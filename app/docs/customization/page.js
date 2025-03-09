@@ -41,42 +41,46 @@ export default function Customization() {
         <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-6">Customization</h1>
 
         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-          XenConnect allows you to fully customize the <span className="text-gray-800 font-medium">Connect Wallet</span> button 
-          using the <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm mx-1">label</code> 
+          XenConnect allows full customization of the 
+          <span className="text-gray-800 font-medium"> Connect Wallet</span> button using the 
+          <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm mx-1">label</code>  
           and <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm mx-1">style</code> props.
         </p>
 
         {/* Styling the Connect Button */}
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Styling the Connect Button</h2>
-        <p className="text-gray-600 mb-4">
-          You can pass any valid **Tailwind CSS classes** (or inline styles) to customize the button’s appearance.  
-          Here’s an example of a **blue button with hover effects**:
-        </p>
-        
-        <CodeSnippet code={customButtonExample} />
+        <div className="mt-6 bg-white border border-gray-950/10 shadow-md rounded-xl p-6 backdrop-blur-md">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Styling the Connect Button</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            You can pass **Tailwind CSS classes** or inline styles to customize the button’s look.  
+            Below is an example of a **blue button with hover effects**:
+          </p>
+          <CodeSnippet code={customButtonExample} />
+        </div>
 
         {/* Customizing Button Label */}
-        <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Customizing the Button Label</h2>
-        <p className="text-gray-600 mb-4">
-          You can change the text of the **Connect Wallet** button using the <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm">label</code> prop.
-          Here’s an example where the button says **Sign In with Crypto** instead:
-        </p>
+        <div className="mt-8 bg-white border border-gray-950/10 shadow-md rounded-xl p-6 backdrop-blur-md">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Customizing the Button Label</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            You can modify the text of the **Connect Wallet** button using the 
+            <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm">label</code> prop.  
+            Below, the button is changed to say **Sign In with Crypto** instead:
+          </p>
+          <CodeSnippet code={customLabelExample} />
+        </div>
 
-        <CodeSnippet code={customLabelExample} />
-
-        {/* Customization Possibilities */}
-        <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. More Customization Options</h2>
-        <p className="text-gray-600 mb-6">
-          With the <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm">style</code> and <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm">label</code> props, you can:
-        </p>
-
-        <ul className="list-disc list-inside text-gray-600 space-y-2">
-          <li>Change colors, sizes, and spacing.</li>
-          <li>Modify text to match your branding.</li>
-          <li>Apply hover, focus, and active states.</li>
-          <li>Use **Tailwind classes** or **inline styles**.</li>
-        </ul>
-
+        {/* More Customization Options */}
+        <div className="mt-8 bg-white border border-gray-950/10 shadow-md rounded-xl p-6 backdrop-blur-md">
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            With the <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm">style</code> and 
+            <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm">label</code> props, you can:
+          </p>
+          <ul className="list-disc list-inside text-gray-700 space-y-2">
+            <li>Change colors, sizes, and spacing.</li>
+            <li>Modify text to match your branding.</li>
+            <li>Apply hover, focus, and active states.</li>
+            <li>Use **Tailwind classes** or **inline styles**.</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
