@@ -13,22 +13,22 @@ export default function Installation() {
   const [packageManager, setPackageManager] = useState("npm");
 
   return (
-    <div className="flex flex-col flex-grow pt-20 px-6 sm:px-12 sm:pl-56 ml-10">
-      <div className="max-w-2xl mx-auto sm:mx-0">
+    <div className="flex flex-col flex-grow pt-20 px-6 sm:px-12 sm:pl-56 w-full max-w-[90%] sm:max-w-none mx-auto">
+      <div className="max-w-2xl w-full flex flex-col items-center sm:items-start">
         {/* Title */}
-        <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-6 text-center sm:text-left">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-4 sm:mb-6 text-center sm:text-left">
           Installation
         </h1>
 
         {/* Description */}
-        <p className="text-lg text-gray-600 mb-6 leading-relaxed text-center sm:text-left">
+        <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed text-center sm:text-left">
           Install <span className="text-gray-800 font-medium">XenConnect</span> and its dependencies
           using your preferred package manager. XenConnect is designed to be{" "}
           <span className="text-gray-800 font-medium">lightweight, easy to integrate, and developer-friendly</span>.
         </p>
 
         {/* Package Manager Switcher */}
-        <div className="flex flex-wrap sm:flex-nowrap gap-2 justify-center sm:justify-start mb-4">
+        <div className="flex flex-wrap sm:flex-nowrap gap-2 justify-center sm:justify-start w-full">
           {Object.keys(commands).map((pm) => (
             <button
               key={pm}
@@ -45,14 +45,16 @@ export default function Installation() {
         </div>
 
         {/* Code Snippet */}
-        <CodeSnippet code={commands[packageManager]} />
+        <div className="w-full mt-4">
+          <CodeSnippet code={commands[packageManager]} />
+        </div>
 
         {/* Next Steps */}
-        <div className="mt-8 bg-white border border-l-4 border-black shadow-md rounded-xl p-6">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4 text-center sm:text-left">
+        <div className="mt-6 sm:mt-8 bg-white border border-l-4 border-black shadow-md rounded-xl p-4 sm:p-6 w-full">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4 text-center sm:text-left">
             Next Steps
           </h2>
-          <p className="text-gray-700 leading-relaxed text-center sm:text-left">
+          <p className="text-gray-700 text-sm sm:text-base leading-relaxed text-center sm:text-left">
             Once installed, follow the{" "}
             <a
               href="/docs/setup"
