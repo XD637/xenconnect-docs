@@ -16,7 +16,7 @@ export default function Navbar() {
 
         {/* Right: Playground Link (opens in new tab) */}
         <a
-          href="https://xenconnect.vercel.app/"
+          href="https://playground.xenconnect.xyz/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm sm:text-base font-medium text-gray-700 hover:text-gray-900 transition"
