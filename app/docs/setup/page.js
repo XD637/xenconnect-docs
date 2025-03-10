@@ -50,7 +50,7 @@ export default function Setup() {
         </p>
 
         {/* Provider Setup */}
-        <div className="mt-6 bg-white border border-gray-950/10 shadow-md rounded-xl p-6 backdrop-blur-md">
+        <div className="mt-6 bg-white border border-l-4 border-black shadow-md rounded-xl p-6 backdrop-blur-md">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Configure the Provider</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             The <code className="font-medium text-gray-900">XenConnectProvider</code> must wrap your application.
@@ -64,7 +64,7 @@ export default function Setup() {
         </div>
 
         {/* Connect Button */}
-        <div className="mt-8 bg-white border border-gray-950/10 shadow-md rounded-xl p-6 backdrop-blur-md">
+        <div className="mt-8 bg-white border border-l-4 border-black shadow-md rounded-xl p-6 backdrop-blur-md">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Add the Connect Button</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Once the provider is configured, you can add the <code className="font-medium text-gray-900">WalletButton</code> to your application.
@@ -74,7 +74,7 @@ export default function Setup() {
         </div>
 
         {/* Final Steps */}
-        <div className="mt-8 bg-white border border-gray-950/10 shadow-md rounded-xl p-6 backdrop-blur-md">
+        <div className="mt-8 bg-white border border-l-4 border-blackshadow-md rounded-xl p-6 backdrop-blur-md">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">Final Steps</h2>
           <p className="text-gray-700 leading-relaxed">
             Your setup is now complete! You can further customize the button and connection experience

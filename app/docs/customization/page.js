@@ -48,7 +48,7 @@ export default function Customization() {
         </p>
 
         {/* Styling the Connect Button */}
-        <div className="mt-6 bg-white border border-gray-950/10 shadow-md rounded-xl p-6 backdrop-blur-md">
+        <div className="mt-6 bg-white border border-l-4 border-black shadow-md rounded-xl p-6 backdrop-blur-md">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Styling the Connect Button</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             You can pass **Tailwind CSS classes** or inline styles to customize the button’s look.  
@@ -58,7 +58,7 @@ export default function Customization() {
         </div>
 
         {/* Customizing Button Label */}
-        <div className="mt-8 bg-white border border-gray-950/10 shadow-md rounded-xl p-6 backdrop-blur-md">
+        <div className="mt-8 bg-white border border-l-4 border-black shadow-md rounded-xl p-6 backdrop-blur-md">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Customizing the Button Label</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             You can modify the text of the **Connect Wallet** button using the 
@@ -69,7 +69,7 @@ export default function Customization() {
         </div>
 
         {/* More Customization Options */}
-        <div className="mt-8 bg-white border border-gray-950/10 shadow-md rounded-xl p-6 backdrop-blur-md">
+        <div className="mt-8 bg-white border border-l-4 border-black shadow-md rounded-xl p-6 backdrop-blur-md">
           <p className="text-gray-700 mb-6 leading-relaxed">
             With the <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm">style</code> and 
             <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm">label</code> props, you can:

@@ -48,7 +48,7 @@ export default function Installation() {
         <CodeSnippet code={commands[packageManager]} />
 
         {/* Next Steps */}
-        <div className="mt-8 bg-white border border-gray-950/10 shadow-md rounded-xl p-6">
+        <div className="mt-8 bg-white border border-l-4 border-black shadow-md rounded-xl p-6">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4 text-center sm:text-left">
             Next Steps
           </h2>
