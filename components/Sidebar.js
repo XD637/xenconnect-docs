@@ -2,18 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronRight } from "lucide-react";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   // Prevent scrolling when sidebar is open
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
 
   // Close sidebar when a menu item is clicked (mobile)
@@ -34,29 +30,48 @@ export default function Sidebar() {
         className={`fixed inset-y-0 left-0 w-56 bg-white border-r border-gray-200 px-6 py-8 transition-transform duration-300 z-50  
         ${isOpen ? "translate-x-0" : "-translate-x-full"} sm:translate-x-0`}
       >
-
         {/* Sidebar Links */}
-        <nav className="space-y-6">
+        <nav className="space-y-12">
           <div>
-            <h2 className="text-lg font-semibold text-gray-900 mb-3 pt-14">Getting Started</h2>
-            <div className="space-y-2 pl-4">
-              <Link href="/docs/prerequisite" className="block text-gray-700 hover:text-black" onClick={closeSidebar}>
+            <h2 className="text-lg font-semibold text-gray-900 mb-3 pt-14 pb-6">Getting Started</h2>
+            <div className="space-y-6 pl-4">
+              <Link
+                href="/docs/prerequisite"
+                className="text-gray-700 hover:text-black flex items-center group"
+                onClick={closeSidebar}
+              >
                 Prerequisite
+                <ChevronRight className="ml-2 w-4 h-4 text-gray-500 group-hover:text-black transition-all" />
               </Link>
-              <Link href="/docs/installation" className="block text-gray-700 hover:text-black" onClick={closeSidebar}>
+              <Link
+                href="/docs/installation"
+                className="text-gray-700 hover:text-black flex items-center group"
+                onClick={closeSidebar}
+              >
                 Installation
+                <ChevronRight className="ml-2 w-4 h-4 text-gray-500 group-hover:text-black transition-all" />
               </Link>
             </div>
           </div>
 
           <div>
-            <h2 className="text-lg font-semibold text-gray-900 mb-3">Connect Button</h2>
-            <div className="space-y-2 pl-4">
-              <Link href="/docs/setup" className="block text-gray-700 hover:text-black" onClick={closeSidebar}>
+            <h2 className="text-lg font-semibold text-gray-900 mb-3 pb-6">Connect Button</h2>
+            <div className="space-y-6 pl-4">
+              <Link
+                href="/docs/setup"
+                className="text-gray-700 hover:text-black flex items-center group"
+                onClick={closeSidebar}
+              >
                 Setup
+                <ChevronRight className="ml-2 w-4 h-4 text-gray-500 group-hover:text-black transition-all" />
               </Link>
-              <Link href="/docs/customization" className="block text-gray-700 hover:text-black" onClick={closeSidebar}>
+              <Link
+                href="/docs/customization"
+                className="text-gray-700 hover:text-black flex items-center group"
+                onClick={closeSidebar}
+              >
                 Customization
+                <ChevronRight className="ml-2 w-4 h-4 text-gray-500 group-hover:text-black transition-all" />
               </Link>
             </div>
           </div>

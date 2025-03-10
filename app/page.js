@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="flex flex-col justify-center flex-grow bg-white p-6 sm:p-12 sm:pl-56 pt-20 mx-auto sm:mx-0 items-center sm:items-start text-center sm:text-left w-full max-w-[90%] sm:max-w-none">
-      <h1 className="text-3xl font-bold text-gray-900 pt-8">XenConnect Docs</h1>
+      <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-4 sm:mb-6 text-center sm:text-left sm:pt-8">XenConnect Docs</h1>
       <p className="text-gray-600 mt-2">A sleek and customizable wallet connection kit.</p>
 
       {/* Features Section */}

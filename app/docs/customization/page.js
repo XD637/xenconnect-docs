@@ -36,15 +36,15 @@ export default function Home() {
 
 export default function Customization() {
   return (
-    <div className="flex flex-col flex-grow w-full max-w-[90%] sm:max-w-2xl px-4 sm:px-8 lg:px-12 pt-20 mx-auto">
-      <div className="w-full flex flex-col items-center sm:items-start text-center sm:text-left">
+    <div className="flex flex-col flex-grow pt-20 px-6 sm:px-12 sm:pl-56 w-full max-w-[90%] sm:max-w-none mx-auto">
+      <div className="max-w-2xl w-full flex flex-col items-center sm:items-start">
         {/* Title */}
         <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-6">
           Customization
         </h1>
 
         {/* Description */}
-        <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+        <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed text-center sm:text-left">
           XenConnect allows full customization of the{" "}
           <span className="text-gray-800 font-medium">Connect Wallet</span> button using the{" "}
           <code className="bg-gray-200 px-1 py-0.5 rounded text-gray-900 font-mono text-sm mx-1">label</code>{" "}
