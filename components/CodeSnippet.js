@@ -13,12 +13,18 @@ export default function CodeSnippet({ code, language = "javascript" }) {
   };
 
   return (
-    <div className="relative bg-gray-950 text-gray-100 p-4 rounded-lg border border-gray-800 shadow-sm">
+    <div className="relative bg-gray-950 text-gray-100 p-3 sm:p-4 rounded-lg border border-gray-800 shadow-sm">
       {/* Syntax Highlighter */}
-      <SyntaxHighlighter 
-        language={language} 
-        style={dracula} 
-        customStyle={{ background: "transparent", fontSize: "0.875rem", overflowX: "auto" }}
+      <SyntaxHighlighter
+        language={language}
+        style={dracula}
+        customStyle={{
+          background: "transparent",
+          fontSize: "0.75rem", // Slightly smaller font for mobile
+          lineHeight: "1.5",
+          overflowX: "auto",
+          wordBreak: "break-word",
+        }}
         wrapLongLines={true} // Ensures better mobile experience
       >
         {code}

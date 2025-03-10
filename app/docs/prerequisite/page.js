@@ -1,6 +1,6 @@
 export default function Prerequisite() {
   return (
-    <div className="flex flex-col flex-grow pt-20 px-6 sm:px-12 sm:pl-56">
+    <div className="flex flex-col flex-grow pt-20 px-6 sm:px-12 sm:pl-56 ml-10">
       {/* Documentation Container */}
       <div className="max-w-2xl">
         <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-6 text-center sm:text-left">
