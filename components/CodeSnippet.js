@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { Clipboard, Check } from "lucide-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -13,19 +15,20 @@ export default function CodeSnippet({ code, language = "javascript" }) {
   };
 
   return (
-    <div className="relative bg-gray-950 text-gray-100 p-3 sm:p-4 rounded-lg border border-gray-800 shadow-sm">
+    <div className="relative bg-gray-950 text-gray-100 p-4 rounded-xl border border-gray-800 shadow-lg max-w-full overflow-x-auto">
       {/* Syntax Highlighter */}
       <SyntaxHighlighter
         language={language}
         style={dracula}
         customStyle={{
           background: "transparent",
-          fontSize: "0.75rem", // Slightly smaller font for mobile
-          lineHeight: "1.5",
+          fontSize: "0.85rem",
+          lineHeight: "1.6",
           overflowX: "auto",
-          wordBreak: "break-word",
+          borderRadius: "0.5rem",
+          whiteSpace: "pre-wrap",
         }}
-        wrapLongLines={true} // Ensures better mobile experience
+        wrapLongLines={true}
       >
         {code}
       </SyntaxHighlighter>
@@ -33,9 +36,14 @@ export default function CodeSnippet({ code, language = "javascript" }) {
       {/* Copy Button */}
       <button
         onClick={handleCopy}
-        className="absolute top-1 right-1 sm:top-2 sm:right-2 p-1 rounded bg-gray-800 hover:bg-gray-700 transition"
+        aria-label="Copy code"
+        className="absolute top-2 right-2 p-3 rounded-lg bg-gray-800 bg-opacity-75 hover:bg-opacity-100 transition text-white flex items-center justify-center sm:p-2"
       >
-        {copied ? <Check className="text-green-400 w-4 h-4" /> : <Clipboard className="w-4 h-4" />}
+        {copied ? (
+          <Check className="text-green-400 w-5 h-5" />
+        ) : (
+          <Clipboard className="w-5 h-5" />
+        )}
       </button>
     </div>
   );

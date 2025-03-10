@@ -38,7 +38,7 @@ export default function Sidebar() {
         {/* Sidebar Links */}
         <nav className="space-y-6">
           <div>
-            <h2 className="text-lg font-semibold text-gray-900 mb-3 pt-20">Getting Started</h2>
+            <h2 className="text-lg font-semibold text-gray-900 mb-3 pt-14">Getting Started</h2>
             <div className="space-y-2 pl-4">
               <Link href="/docs/prerequisite" className="block text-gray-700 hover:text-black" onClick={closeSidebar}>
                 Prerequisite
