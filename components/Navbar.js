@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -8,7 +9,17 @@ export default function Navbar() {
       <div className="flex h-14 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Left: Brand Logo */}
         <Link href="/" className="flex items-center text-lg sm:text-xl font-bold text-gray-900">
-          <span>XenConnect</span>
+        <Image
+  src="/images/xc1.jpeg"
+  alt="XenConnect Logo"
+  width={32}
+  height={32}
+  className="rounded-md shadow-md"
+  priority={true} // Ensures it loads fast and crisply
+  quality={100} // Increases image quality
+/>
+
+          <span className="ml-2">XenConnect</span>
           <span className="ml-2 text-xs font-medium bg-gray-200 text-gray-600 px-2 py-0.5 rounded-md">
             v1.1.8
           </span>
