@@ -21,7 +21,7 @@ export default function Navbar() {
 
           <span className="ml-2">XenConnect</span>
           <span className="ml-2 text-xs font-medium bg-gray-200 text-gray-600 px-2 py-0.5 rounded-md">
-            v1.1.8
+            v1.1.11
           </span>
         </Link>
 
