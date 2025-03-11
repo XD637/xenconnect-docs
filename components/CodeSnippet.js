@@ -4,6 +4,8 @@ import { useState, useCallback } from "react";
 import { Clipboard, Check } from "lucide-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomOneLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { vs } from "react-syntax-highlighter/dist/esm/styles/prism"; // Clean white background theme
+
 
 export default function CodeSnippet({ code, language = "javascript" }) {
   const [copied, setCopied] = useState(false);

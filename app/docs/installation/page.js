@@ -3,10 +3,10 @@ import { useState } from "react";
 import CodeSnippet from "../../../components/CodeSnippet";
 
 const commands = {
-  npm: "npm install xenconnect@latest wagmi viem@2.x @tanstack/react-query lucide-react",
-  yarn: "yarn add xenconnect@latest wagmi viem@2.x @tanstack/react-query lucide-react",
-  pnpm: "pnpm add xenconnect@latest wagmi viem@2.x @tanstack/react-query lucide-react",
-  bun: "bun add xenconnect@latest wagmi viem@2.x @tanstack/react-query lucide-react",
+  npm: "npm install xenconnect wagmi viem@2.x @tanstack/react-query ",
+  yarn: "yarn add xenconnect wagmi viem@2.x @tanstack/react-query ",
+  pnpm: "pnpm add xenconnect wagmi viem@2.x @tanstack/react-query ",
+  bun: "bun add xenconnect wagmi viem@2.x @tanstack/react-query ",
 };
 
 export default function Installation() {
