@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import 'highlight.js/styles/github.css';
+
 
 :root {
   --background: #ffffff;
@@ -16,4 +18,48 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Highlight.js overrides */
+.hljs {
+  background: white;
+  color: #24292f; /* base text color */
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal {
+  color: #d73a49; /* red keywords */
+  font-weight: bold;
+}
+
+.hljs-string,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #032f62; /* dark blue strings */
+}
+
+.hljs-comment {
+  color: #6a737d; /* gray comments */
+  font-style: italic;
+}
+
+.hljs-function .hljs-title {
+  color: #005cc5; /* function names */
+}
+
+.hljs-variable,
+.hljs-title,
+.hljs-name {
+  color: #22863a; /* green variables */
+}
+
+.hljs-number {
+  color: #005cc5; /* blue numbers */
+}
+
+.hljs-attr {
+  color: #6f42c1; /* purple attributes */
 }

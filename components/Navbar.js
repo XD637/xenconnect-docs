@@ -32,7 +32,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="text-sm sm:text-base font-medium text-gray-700 hover:text-gray-900 transition"
         >
-          Playground
+          Try Demo
         </a>
       </div>
     </div>

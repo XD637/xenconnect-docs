@@ -2,6 +2,8 @@ import "./globals.css";
 import Navbar from "../components/Navbar.js";
 import Sidebar from "../components/Sidebar.js";
 import Footer from "../components/Footer.js"; // Import Footer
+import 'highlight.js/styles/github.css';
+
 
 export const metadata = {
   title: "XenConnect",
