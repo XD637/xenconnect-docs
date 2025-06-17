@@ -3,7 +3,7 @@
 **XenConnect** is a lightweight, ultra-fast Web3 wallet connector modal — inspired by [RainbowKit](https://rainbowkit.com), but with performance-first principles and zero-bloat UX.
 
 Website: [https://xenconnect.xyz](https://xenconnect.xyz)  
-npm: [xenconnect](https://www.npmjs.com/package/xenconnect)
+Npm: [xenconnect](https://www.npmjs.com/package/xenconnect)
 
 ---
 
